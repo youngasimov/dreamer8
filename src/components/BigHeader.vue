@@ -2,23 +2,22 @@
   <div class="header">
     <div class="layer-container">
       <img src="../../static/header-animation/background.svg" class="layer background" :style="background.style">
+      <img src="../../static/header-animation/foreground.svg" class="layer foreground" :style="foreground.style">
       <transition-group name="clouds">
         <img v-for="image in onScreen" :src="image" class="layer cloud" :style="clouds.style" :key="image">
       </transition-group>
-      <img src="../../static/header-animation/foreground.svg" class="layer foreground" :style="foreground.style">
-      <scroll-spy :max="250">
+      <scroll-between :max="250">
         <img src="../assets/logo.svg" class="layer logo">
-      </scroll-spy>
+      </scroll-between>
     </div>
+    <img src="../../static/header-animation/foreground.svg" class="reflection" :style="reflection.style">
   </div>
 </template>
 
 <script>
-  import { ScrollSpy } from './scrollspy/ScrollSpyModule';
   /* eslint-disable prefer-template,max-len,no-plusplus,spaced-comment */
 
   export default {
-    components: { ScrollSpy },
     name: 'big-header',
     data() {
       return {
@@ -47,7 +46,12 @@
         },
         foreground: {
           style: {
-            transform: 'translateZ(80px)',
+            transform: 'translateZ(0px)',
+          },
+        },
+        reflection: {
+          style: {
+            transform: 'translateZ(0px) rotateX(180deg)',
           },
         },
       };
@@ -82,7 +86,10 @@
           transform: 'translateZ(-100px) translateY(' + ((10 / this.height) * this.y) + 'px)',
         });
         this.$set(this.foreground, 'style', {
-          transform: 'translateZ(80px) translateX(' + (((10 / this.width) * this.x) - 5) + 'px)',
+          transform: 'translateZ(0px) translateX(' + (((10 / this.width) * this.x) - 5) + 'px)',
+        });
+        this.$set(this.reflection, 'style', {
+          transform: 'translateZ(0px) translateX(' + (((10 / this.width) * this.x) - 5) + 'px) rotateX(180deg)',
         });
       },
     },
@@ -90,14 +97,16 @@
 </script>
 
 <style lang='scss'>
+  @import '../assets/main';
 
   .header {
     height: 100%;
     width: 100%;
+    background-color: darken($brand-primary, 10%);
+    border-bottom: 15px solid darken($brand-primary, 10%);
     .layer-container {
       width: 100%;
       height: 100%;
-      background: #29ABE2;
       position: relative;
       perspective: 2000px;
       overflow: hidden;
@@ -105,17 +114,17 @@
         height: auto;
         position: absolute;
         &.logo {
-          width: 40%;
-          bottom: 50%;
-          left: 30%;
+          width: 30%;
+          bottom: 10px;
+          right: 10px;
         }
         &.background {
           width: 100%;
           bottom: 10%;
         }
         &.foreground {
-          width: 100%;
-          min-width: 400px;
+          width: 60%;
+          min-width: 200px;
           bottom: 0%;
         }
         &.cloud {
@@ -126,6 +135,18 @@
         }
       }
     }
+  }
+
+  .reflection{
+    position: relative;
+    display: block;
+    width: 60%;
+    min-width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+    top: 15px;
   }
 
   .clouds-enter-active {

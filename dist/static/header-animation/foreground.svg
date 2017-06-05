@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" width="2000px" height="673px" viewBox="0 0 2000 673" xml:space="preserve">
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="2000px" height="571px" viewBox="0 0 2000 571" enable-background="new 0 0 2000 571" xml:space="preserve">
+<g>
+	<rect x="1290" y="154.316" fill="#333333" width="161" height="415"/>
+	<rect x="1282" y="154.316" fill="#366668" width="161" height="415"/>
+	<polygon fill="#294747" points="1282,569.316 1443,569.316 1443,320.083 	"/>
+	<rect x="1315" y="190.316" fill="#FFFF00" width="37" height="24"/>
+	<rect x="1374" y="190.316" fill="#666666" width="37" height="24"/>
+	<rect x="1314" y="231.316" fill="#E6E6E6" width="37" height="25"/>
+	<rect x="1373" y="231.316" fill="#E6E6E6" width="37" height="25"/>
+	<rect x="1314" y="276.316" fill="#E6E6E6" width="37" height="25"/>
+	<rect x="1373" y="276.316" fill="#666666" width="37" height="25"/>
+	<rect x="1313" y="320.316" fill="#666666" width="37" height="25"/>
+	<rect x="1372" y="320.316" fill="#FFFF00" width="37" height="25"/>
+	<rect x="1313" y="365.316" fill="#E6E6E6" width="37" height="24"/>
+	<rect x="1372" y="365.316" fill="#E6E6E6" width="37" height="24"/>
+	<rect x="1314" y="410.316" fill="#666666" width="37" height="25"/>
+	<rect x="1373" y="410.316" fill="#666666" width="37" height="25"/>
+	<rect x="1314" y="455.316" fill="#FFFF00" width="37" height="25"/>
+	<rect x="1373" y="455.316" fill="#E6E6E6" width="37" height="25"/>
+	<rect x="1314" y="500.316" fill="#E6E6E6" width="37" height="26"/>
+	<rect x="1373" y="500.316" fill="#E6E6E6" width="37" height="26"/>
+</g>
 <g>
 	<g>
 		<rect x="1019" y="146" fill="#4D4D4D" width="116" height="426"/>
@@ -49,16 +71,10 @@
 		<polygon fill="#666666" points="1813,533 1968,533 1968,361.816 		"/>
 	</g>
 </g>
-<rect y="570" fill="#333333" width="2000" height="66"/>
-<rect y="588" fill="#F2F2F2" width="2000" height="8"/>
-<rect y="624" fill="#8CC63F" width="2000" height="101"/>
-<rect y="641" fill="#B9DD22" width="2000" height="26"/>
-<rect y="673" fill="#009245" width="2000" height="15"/>
-<rect y="697" fill="#009245" width="2000" height="15"/>
 <g>
 	<rect x="1510" y="280" fill="#333333" width="122" height="213"/>
 	<rect x="1502" y="280" fill="#FF00FF" width="122" height="213"/>
-	<polygon fill="#93278F" points="1502,493 1624,493 1624,362.313 	"/>
+	<polygon fill="#93278F" points="1502,493 1624,493 1624,362.312 	"/>
 	<rect x="1521" y="300" fill="#666666" width="30" height="21"/>
 	<rect x="1570" y="300" fill="#FFFF00" width="30" height="21"/>
 	<rect x="1521" y="330" fill="#CCCCCC" width="30" height="21"/>

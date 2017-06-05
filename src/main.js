@@ -5,10 +5,12 @@ import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
 import 'vue-awesome/icons';
 import Icon from 'vue-awesome/components/Icon';
+import ScrollBetween from 'vue-scroll-between';
 import App from './App';
 import router from './router';
 
 Vue.use(BootstrapVue);
+Vue.use(ScrollBetween);
 Vue.component('icon', Icon);
 
 Vue.config.productionTip = false;

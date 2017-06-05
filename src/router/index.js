@@ -5,6 +5,10 @@ import Home from '@/components/Home';
 Vue.use(Router);
 
 export default new Router({
+  hashbang: false,
+  mode: 'history',
+  linkActiveClass: 'active',
+  transitionOnLoad: true,
   routes: [
     {
       path: '/',
