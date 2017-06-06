@@ -5,7 +5,7 @@
     </div>
     <div class="container-fluid aboutme">
       <div class="row">
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 side">
           <div class="card card-inverse card-primary text-center mx-auto imageme">
             <img src="../assets/me.jpg" class="card-img-top img-fluid" alt="Responsive image">
             <div class="card-block clearfix">
@@ -46,22 +46,25 @@
           <div class="my-5 mx-auto text-center hidden-print" style="width: 300px">
             <a href="https://www.linkedin.com/in/camiloveracortes/?locale=en_US" target="_blank" class="btn btn-link"
                style="color: dodgerblue">
-              <icon name="linkedin-square" scale="2"></icon>
+              <icon name="linkedin-square" scale="1"></icon>
             </a>
             <a href="https://plus.google.com/+CamiloVeraCortes" target="_blank" class="btn btn-link"
                style="color: darkred">
-              <icon name="google-plus-square" scale="2"></icon>
+              <icon name="google-plus-square" scale="1"></icon>
             </a>
             <a href="https://github.com/youngasimov" target="_blank" class="btn btn-link" style="color: black">
-              <icon name="github" scale="2"></icon>
+              <icon name="github" scale="1"></icon>
             </a>
             <a href="https://open.spotify.com/user/12124216741" target="_blank" class="btn btn-link"
                style="color: darkgreen">
-              <icon name="spotify" scale="2"></icon>
+              <icon name="spotify" scale="1"></icon>
+            </a>
+            <a href="./static/camilo-vera-cortes-resume.pdf" target="_blank" class="btn btn-link" style="color: #b71c1c">
+                <icon name="file-pdf-o" scale="1"></icon>
             </a>
           </div>
         </div>
-        <div class="col-xs-12 col-md-8">
+        <div class="col-xs-12 col-md-8 content">
           <div class="page-break"></div>
 
           <projects></projects>
@@ -107,14 +110,30 @@
   .aboutme {
     padding-top: 20px;
     padding-bottom: 20px;
-    //background: lighten($brand-primary,50%);
-    //box-shadow: inset 0 0 25px 1px darken($brand-primary, 30%);
+
+    .side{
+      order:2;
+    }
+    .content{
+      order:1;
+      border-bottom: 2px dashed $brand-primary;
+    }
+    @media screen and (min-width: map-get($grid-breakpoints,'md')) {
+      .side{
+        order:1;
+      }
+      .content{
+        order:2;
+        border-bottom: none;
+      }
+    }
 
     .imageme {
       box-shadow: 0 0 10px 1px darken($brand-primary, 30%);
       display: block;
       width: 100%;
       max-width: 300px;
+      margin-top: 10px;
       .imagemeaction {
         .visible {
           display: none;

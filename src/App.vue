@@ -52,6 +52,6 @@
     width: auto;
   }
   .navbar{
-    height: 60px;
+    min-height: 60px;
   }
 </style>
