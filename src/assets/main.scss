@@ -9,3 +9,18 @@ hmml, body {
   padding: 0px;
   margin: 0px;
 }
+
+.badge{
+  font-size: 85%;
+}
+
+@media all {
+  .page-break	{ display: none; }
+}
+
+@media print {
+  .page-break	{ display: block; page-break-before: always; }
+  body{
+    font-size: 5pt !important;
+  }
+}

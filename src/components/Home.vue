@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="header-container">
+    <div class="header-container hidden-print">
       <big-header></big-header>
     </div>
     <div class="container-fluid aboutme">
@@ -8,7 +8,7 @@
         <div class="col-xs-12 col-md-4">
           <div class="card card-inverse card-primary text-center mx-auto imageme">
             <img src="../assets/me.jpg" class="card-img-top img-fluid" alt="Responsive image">
-            <div class="card-block">
+            <div class="card-block clearfix">
               <h4 class="card-title">Camilo Vera Cortés</h4>
               <p class="card-text">
                 Hey! What are you looking around?
@@ -43,7 +43,7 @@
               -->
             </div>
           </div>
-          <div class="my-5 mx-auto text-center" style="width: 300px">
+          <div class="my-5 mx-auto text-center hidden-print" style="width: 300px">
             <a href="https://www.linkedin.com/in/camiloveracortes/?locale=en_US" target="_blank" class="btn btn-link"
                style="color: dodgerblue">
               <icon name="linkedin-square" scale="2"></icon>
@@ -62,7 +62,10 @@
           </div>
         </div>
         <div class="col-xs-12 col-md-8">
+          <div class="page-break"></div>
+
           <projects></projects>
+          <div class="page-break"></div>
           <aboutme></aboutme>
 
         </div>
@@ -86,6 +89,11 @@
       BigHeader,
     },
     name: 'home',
+    methods: {
+      print() {
+        window.print();
+      },
+    },
   };
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="row project" :class="direction">
-    <div class="col-xs-12 col-md-7 col-lg-6 col-xl-5 project-image">
+    <div class="col-xs-12 col-md-7 col-lg-6 col-xl-5 project-image hidden-print">
       <img :src="image" class="img-fluid img-thumbnail">
     </div>
     <div class="col-xs-12 col-md-5 col-lg-6 col-xl-7 project-content">
