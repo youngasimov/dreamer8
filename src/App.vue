@@ -27,7 +27,8 @@
         </b-collapse>
       </b-navbar>
     </scroll-between>
-    <router-view></router-view>
+    <home></home>
+    <!--<router-view></router-view>-->
     <div class="container-fluid contact">
 
     </div>
@@ -35,9 +36,11 @@
 </template>
 
 <script>
+  import Home from './components/Home';
   /* eslint-disable spaced-comment */
 
   export default {
+    components: { Home },
     name: 'app',
   };
 </script>
