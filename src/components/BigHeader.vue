@@ -36,9 +36,9 @@
         },
         clouds: {
           images: [
-            '/static/header-animation/cloud1.svg',
-            '/static/header-animation/cloud2.svg',
-            '/static/header-animation/cloud3.svg',
+            './static/header-animation/cloud1.svg',
+            './static/header-animation/cloud2.svg',
+            './static/header-animation/cloud3.svg',
           ],
           style: {
             transform: 'translateZ(-100px)',

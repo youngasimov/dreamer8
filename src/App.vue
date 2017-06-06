@@ -13,7 +13,7 @@
     </b-navbar>
     </scroll-between>
     <scroll-between :min="350" transition="slide">
-      <b-navbar fixed="top" variant="primary" toggleable toggle-breakpoint="sm" class="hidden-print">
+      <b-navbar fixed="top" type="inverse" variant="primary" toggleable toggle-breakpoint="sm" class="hidden-print">
         <b-nav-toggle target="nav_collapse"></b-nav-toggle>
         <b-link class="navbar-brand" to="#">
           <img src="./assets/logo.svg" class=" navbar-brand logo">
